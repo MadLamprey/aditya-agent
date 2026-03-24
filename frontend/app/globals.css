@@ -1,0 +1,206 @@
+/* ─── Reset & base ──────────────────────────────────────────────────────── */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #f5f3ef;
+  color: #1a1814;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+::selection {
+  background: rgba(61, 90, 128, 0.18);
+  color: #1a1814;
+}
+
+/* ─── Scrollbar ─────────────────────────────────────────────────────────── */
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: #ccc7bc;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a094;
+}
+
+/* ─── App shell ─────────────────────────────────────────────────────────── */
+
+.app-shell {
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  isolation: isolate;
+}
+
+/* ─── Paper texture overlay ─────────────────────────────────────────────── */
+
+.paper-texture {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image:
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: 0.025;
+  mix-blend-mode: multiply;
+}
+
+/* ─── Background grid ───────────────────────────────────────────────────── */
+
+.bg-atmo {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 23px,
+      rgba(26, 24, 20, 0.018) 23px,
+      rgba(26, 24, 20, 0.018) 24px
+    );
+}
+
+/* ─── Console shell ─────────────────────────────────────────────────────── */
+
+.console-shell {
+  max-width: 1180px;
+  margin: 0 auto;
+  border-radius: 22px;
+  padding: 18px;
+  background: linear-gradient(180deg, #faf9f7, #f5f3ef);
+  border: 4px solid #e8e2d6;
+  box-shadow: 0 18px 60px rgba(26,24,20,0.06), inset 0 2px 0 rgba(255,255,255,0.6);
+}
+
+/* ─── Viewport bezel & frame ────────────────────────────────────────────── */
+
+.viewport-bezel {
+  background: linear-gradient(180deg, #e9e3db, #efe9df);
+  padding: 10px;
+  border-radius: 16px;
+  border: 2px solid rgba(26,24,20,0.12);
+  box-shadow: 0 8px 24px rgba(26,24,20,0.06);
+}
+
+.viewport-frame {
+  border-radius: 10px;
+  overflow: hidden;
+  background: #071630;
+  border: 6px solid #0c2538;
+}
+
+/* ─── Loading indicator ─────────────────────────────────────────────────── */
+
+.loading-block {
+  background: #faf9f7;
+  border: 1px solid rgba(26,24,20,0.12);
+  box-shadow: 0 1px 3px rgba(26,24,20,0.08);
+  overflow: hidden;
+  position: relative;
+}
+
+.loading-block::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: repeating-linear-gradient(
+    90deg,
+    #faf9f7 0px,
+    #faf9f7 3px,
+    transparent 3px,
+    transparent 6px
+  );
+}
+
+.loading-dots-row {
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: #a8a094;
+  letter-spacing: 0.04em;
+}
+
+.loading-dots-row::before {
+  content: 'THINKING';
+  margin-right: 8px;
+}
+
+.loading-dot {
+  width: 4px;
+  height: 4px;
+  background: #4a453c;
+  animation: blink 1s infinite;
+}
+
+.loading-dot:nth-child(2) { animation-delay: 0.2s; }
+.loading-dot:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes blink {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
+}
+
+/* ─── Error toast ───────────────────────────────────────────────────────── */
+
+.error-toast {
+  position: fixed;
+  top: 72px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+  background: #c44536;
+  border: 2px solid #1a1814;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  max-width: 480px;
+  box-shadow: 4px 4px 0 #1a1814;
+}
+
+.error-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #faf9f7;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.error-text {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.9);
+}

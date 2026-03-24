@@ -1,0 +1,524 @@
+[
+  {
+    "query": "Tell me about yourself.",
+    "required_sources": ["resume", "values"],
+    "optional_sources": ["linkedin"],
+    "expected_audience": "general"
+  },
+  {
+    "query": "Walk me through your background.",
+    "required_sources": ["resume"],
+    "optional_sources": ["linkedin", "github"],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "Walk me through your resume.",
+    "required_sources": ["resume"],
+    "optional_sources": [],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "Where did you study?",
+    "required_sources": ["resume"],
+    "optional_sources": ["linkedin"],
+    "expected_audience": "general"
+  },
+  {
+    "query": "What did you study at NUS?",
+    "required_sources": ["resume"],
+    "optional_sources": ["linkedin"],
+    "expected_audience": "general"
+  },
+  {
+    "query": "What internships have you done?",
+    "required_sources": ["resume"],
+    "optional_sources": ["linkedin"],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "What kind of roles have you worked in before?",
+    "required_sources": ["resume"],
+    "optional_sources": ["linkedin"],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "What are your main technical skills?",
+    "required_sources": ["resume"],
+    "optional_sources": ["github"],
+    "expected_audience": "technical"
+  },
+  {
+    "query": "What programming languages do you know?",
+    "required_sources": ["resume"],
+    "optional_sources": ["github"],
+    "expected_audience": "technical"
+  },
+  {
+    "query": "Tell me about your Python experience.",
+    "required_sources": ["resume", "github"],
+    "optional_sources": [],
+    "expected_audience": "technical"
+  },
+  {
+    "query": "Do you have experience with machine learning systems?",
+    "required_sources": ["resume"],
+    "optional_sources": ["github"],
+    "expected_audience": "technical"
+  },
+  {
+    "query": "Do you have experience with large language models?",
+    "required_sources": ["resume"],
+    "optional_sources": ["github", "blog"],
+    "expected_audience": "technical"
+  },
+  {
+    "query": "What GitHub projects have you built?",
+    "required_sources": ["github"],
+    "optional_sources": [],
+    "expected_audience": "technical"
+  },
+  {
+    "query": "Which project best shows your engineering strengths?",
+    "required_sources": ["github"],
+    "optional_sources": ["resume", "values"],
+    "expected_audience": "technical"
+  },
+  {
+    "query": "Tell me about a machine learning project you've worked on.",
+    "required_sources": ["resume", "github"],
+    "optional_sources": [],
+    "expected_audience": "technical"
+  },
+  {
+    "query": "Walk me through a project end to end.",
+    "required_sources": ["github", "resume"],
+    "optional_sources": [],
+    "expected_audience": "technical"
+  },
+  {
+    "query": "What was the most technically challenging project you've worked on?",
+    "required_sources": ["github", "resume"],
+    "optional_sources": ["values"],
+    "expected_audience": "technical"
+  },
+  {
+    "query": "Can you explain a system you built that had to work reliably in production?",
+    "required_sources": ["resume", "github"],
+    "optional_sources": ["values"],
+    "expected_audience": "technical"
+  },
+  {
+    "query": "Have you deployed AI systems in real-world settings?",
+    "required_sources": ["resume"],
+    "optional_sources": ["github"],
+    "expected_audience": "technical"
+  },
+  {
+    "query": "What experience do you have with data pipelines?",
+    "required_sources": ["resume"],
+    "optional_sources": ["github"],
+    "expected_audience": "technical"
+  },
+  {
+    "query": "What experience do you have with evaluation frameworks?",
+    "required_sources": ["resume"],
+    "optional_sources": ["github"],
+    "expected_audience": "technical"
+  },
+  {
+    "query": "How do you think about quality when building AI systems?",
+    "required_sources": ["values"],
+    "optional_sources": ["resume"],
+    "expected_audience": "technical"
+  },
+  {
+    "query": "How do you stay up to date with new technologies?",
+    "required_sources": ["values"],
+    "optional_sources": ["blog"],
+    "expected_audience": "technical"
+  },
+  {
+    "query": "What have you written about on your blog?",
+    "required_sources": ["blog"],
+    "optional_sources": [],
+    "expected_audience": "general"
+  },
+  {
+    "query": "Why did you choose Computer Science?",
+    "required_sources": ["values"],
+    "optional_sources": ["linkedin", "resume"],
+    "expected_audience": "general"
+  },
+  {
+    "query": "Why are you interested in AI?",
+    "required_sources": ["values"],
+    "optional_sources": ["blog"],
+    "expected_audience": "general"
+  },
+  {
+    "query": "What motivates you at work?",
+    "required_sources": ["values"],
+    "optional_sources": [],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "What kind of problems do you enjoy working on most?",
+    "required_sources": ["values"],
+    "optional_sources": ["github"],
+    "expected_audience": "general"
+  },
+  {
+    "query": "What are your strengths?",
+    "required_sources": ["values"],
+    "optional_sources": [],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "What is your biggest weakness?",
+    "required_sources": ["values"],
+    "optional_sources": [],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "What is your working style?",
+    "required_sources": ["values"],
+    "optional_sources": [],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "How do you handle feedback?",
+    "required_sources": ["values"],
+    "optional_sources": [],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "How do you handle conflict in a team?",
+    "required_sources": ["values"],
+    "optional_sources": [],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "Tell me about a time you disagreed with a teammate.",
+    "required_sources": ["values"],
+    "optional_sources": [""],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "Have you worked in a team environment before?",
+    "required_sources": ["resume"],
+    "optional_sources": ["values"],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "What kind of work culture do you thrive in?",
+    "required_sources": ["values"],
+    "optional_sources": [],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "How do you communicate technical ideas to non-technical people?",
+    "required_sources": ["values"],
+    "optional_sources": ["resume"],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "Tell me about a time you had to explain something complex clearly.",
+    "required_sources": ["values", "resume"],
+    "optional_sources": [],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "What are you most proud of professionally?",
+    "required_sources": ["resume"],
+    "optional_sources": ["github", "values"],
+    "expected_audience": "general"
+  },
+  {
+    "query": "What accomplishment are you most proud of?",
+    "required_sources": ["resume"],
+    "optional_sources": ["github", "values"],
+    "expected_audience": "general"
+  },
+  {
+    "query": "Tell me about a time you made a mistake.",
+    "required_sources": ["values", "resume"],
+    "optional_sources": [],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "Tell me about a time you failed and what you learned.",
+    "required_sources": ["values", "resume"],
+    "optional_sources": [],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "How do you prioritize when you have multiple responsibilities?",
+    "required_sources": ["values"],
+    "optional_sources": [],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "Describe a time you had to think on your feet.",
+    "required_sources": ["values", "resume"],
+    "optional_sources": [],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "Describe a time you had to learn something quickly.",
+    "required_sources": ["values", "resume"],
+    "optional_sources": [],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "Tell me about a time you took initiative.",
+    "required_sources": ["values", "resume"],
+    "optional_sources": [],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "Tell me about a time you showed leadership.",
+    "required_sources": ["values", "resume"],
+    "optional_sources": [],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "How do you make decisions under uncertainty?",
+    "required_sources": ["values"],
+    "optional_sources": [],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "If you had to choose between shipping quickly and building a more elegant design, how would you decide?",
+    "required_sources": ["values"],
+    "optional_sources": [],
+    "expected_audience": "technical"
+  },
+  {
+    "query": "If a system's aggregate metrics looked good but one user segment performed badly, what would you do?",
+    "required_sources": ["values"],
+    "optional_sources": ["resume"],
+    "expected_audience": "technical"
+  },
+  {
+    "query": "How would you approach debugging a model that works in demos but fails in production?",
+    "required_sources": ["values"],
+    "optional_sources": ["resume", "github"],
+    "expected_audience": "technical"
+  },
+  {
+    "query": "What kind of manager or team environment helps you do your best work?",
+    "required_sources": ["values"],
+    "optional_sources": [],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "Where do you see yourself in three to five years?",
+    "required_sources": ["values"],
+    "optional_sources": [],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "Why are you interested in this role?",
+    "required_sources": ["values"],
+    "optional_sources": ["resume"],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "Why do you want to work at Manulife?",
+    "required_sources": ["values"],
+    "optional_sources": ["resume"],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "What do you know about the insurance industry?",
+    "required_sources": ["values"],
+    "optional_sources": ["blog", "resume"],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "Why this industry?",
+    "required_sources": ["values"],
+    "optional_sources": ["resume"],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "What makes you different from other candidates?",
+    "required_sources": ["values"],
+    "optional_sources": ["resume", "github", "linkedin"],
+    "expected_audience": "general"
+  },
+  {
+    "query": "What do you do outside of work?",
+    "required_sources": ["values"],
+    "optional_sources": [],
+    "expected_audience": "general"
+  },
+  {
+    "query": "What are your hobbies?",
+    "required_sources": ["values"],
+    "optional_sources": ["blog"],
+    "expected_audience": "general"
+  },
+  {
+    "query": "What books, blogs, or ideas have influenced how you think?",
+    "required_sources": ["values"],
+    "optional_sources": ["blog"],
+    "expected_audience": "general"
+  },
+  {
+    "query": "What's the weather in Singapore today?",
+    "required_sources": [],
+    "optional_sources": [],
+    "expected_audience": "general"
+  },
+  {
+    "query": "Who won the latest Formula 1 race?",
+    "required_sources": [],
+    "optional_sources": [],
+    "expected_audience": "general"
+  },
+  {
+    "query": "What's the capital of Brazil?",
+    "required_sources": [],
+    "optional_sources": [],
+    "expected_audience": "general"
+  },
+  {
+    "query": "Can you summarize today's biggest AI news headlines?",
+    "required_sources": [],
+    "optional_sources": [],
+    "expected_audience": "general"
+  },
+  {
+    "query": "How do you describe yourself professionally on LinkedIn?",
+    "required_sources": ["linkedin"],
+    "optional_sources": [],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "What is your perspective on responsible AI development?",
+    "required_sources": ["values"],
+    "optional_sources": ["blog"],
+    "expected_audience": "technical"
+  },
+  {
+    "query": "Have you written anything about your experience building LLM applications?",
+    "required_sources": ["blog"],
+    "optional_sources": ["resume"],
+    "expected_audience": "technical"
+  },
+  {
+    "query": "What technical topics do you write about most?",
+    "required_sources": ["blog"],
+    "optional_sources": [],
+    "expected_audience": "technical"
+  },
+  {
+    "query": "What are your salary expectations?",
+    "required_sources": [],
+    "optional_sources": [],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "Are you open to relocation?",
+    "required_sources": [],
+    "optional_sources": [],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "When can you start?",
+    "required_sources": [],
+    "optional_sources": [],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "What would your biggest critic say about you?",
+    "required_sources": ["values"],
+    "optional_sources": [],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "What are you NOT good at?",
+    "required_sources": ["values"],
+    "optional_sources": [],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "Can you write me a Python function to sort a list?",
+    "required_sources": [],
+    "optional_sources": [],
+    "expected_audience": "general"
+  },
+  {
+    "query": "Help me debug this JavaScript error.",
+    "required_sources": [],
+    "optional_sources": [],
+    "expected_audience": "general"
+  },
+  {
+    "query": "What are your political views?",
+    "required_sources": [],
+    "optional_sources": [],
+    "expected_audience": "general"
+  },
+  {
+    "query": "What is your religion?",
+    "required_sources": [],
+    "optional_sources": [],
+    "expected_audience": "general"
+  },
+  {
+    "query": "How much money do you have in your bank account?",
+    "required_sources": [],
+    "optional_sources": [],
+    "expected_audience": "general"
+  },
+  {
+    "query": "Do you have any certifications?",
+    "required_sources": ["resume"],
+    "optional_sources": ["linkedin"],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "Have you done any research or published papers?",
+    "required_sources": ["resume"],
+    "optional_sources": ["linkedin", "blog"],
+    "expected_audience": "technical"
+  },
+  {
+    "query": "Do you have any open source contributions?",
+    "required_sources": ["github"],
+    "optional_sources": ["resume"],
+    "expected_audience": "technical"
+  },
+  {
+    "query": "What is your GPA?",
+    "required_sources": ["resume"],
+    "optional_sources": [],
+    "expected_audience": "recruiter"
+  },
+  {
+    "query": "What extracurriculars or clubs were you involved in at university?",
+    "required_sources": ["resume"],
+    "optional_sources": ["linkedin", "values"],
+    "expected_audience": "general"
+  },
+  {
+    "query": "What is your most starred GitHub repo?",
+    "required_sources": ["github"],
+    "optional_sources": [],
+    "expected_audience": "technical"
+  },
+  {
+    "query": "Have you worked with cloud platforms like AWS?",
+    "required_sources": ["resume"],
+    "optional_sources": ["github"],
+    "expected_audience": "technical"
+  },
+  {
+    "query": "Describe your experience with SQL and databases.",
+    "required_sources": ["resume"],
+    "optional_sources": ["github"],
+    "expected_audience": "technical"
+  }
+]

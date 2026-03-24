@@ -1,0 +1,675 @@
+[
+  {
+    "query": "Tell me about yourself.",
+    "expected_audience": "general",
+    "likely_sources": ["resume", "values", "linkedin"],
+    "gold_answer": "I'm a final-year Computer Science student at NUS with a strong focus on AI/ML systems, software engineering, and database systems. Across internships at AI Singapore, Venture, Hutchinson, and DEIF, I've worked on production-oriented systems ranging from multilingual speech pipelines and evaluation frameworks to an edge-based voice AI assistant and industrial software. The thread across my work is that I'm most interested in the gap between something that works technically and something a real user can actually trust. That's what pushes me toward building reliable, user-centered systems rather than treating technology as an end in itself.",
+    "expected_facts": [
+      "Software Engineering",
+      "AI/ML systems",
+      "Computer Science",
+      "trust",
+      "NUS"
+    ]
+  },
+  {
+    "query": "Walk me through your background.",
+    "expected_audience": "recruiter",
+    "likely_sources": ["resume", "linkedin"],
+    "gold_answer": "I'm currently studying Computer Science at NUS, where I also minor in Innovation and Design. My internships started in software engineering roles at DEIF and Hutchinson, where I worked on EV charging systems, protocol validation, industrial dashboards, and workflow software. More recently I moved deeper into AI systems work at Venture and AI Singapore. At Venture I built an edge-based voice AI dining assistant end to end, and at AI Singapore I worked on ETL and evaluation for multilingual speech data used in the SEA-LION project. Alongside that, I've also been a Teaching Assistant for AI and Machine Learning and Foundations of Software Engineering.",
+    "expected_facts": [
+      "DEIF",
+      "Venture Corporation",
+      "Hutchinson",
+      "AI Singapore",
+      "Teaching Assistant"
+    ]
+  },
+  {
+    "query": "What is your educational background?",
+    "expected_audience": "general",
+    "likely_sources": ["resume", "linkedin"],
+    "gold_answer": "I'm pursuing a Bachelor of Computing (Honours) in Computer Science at the National University of Singapore, with a minor in Innovation and Design. My GPA is 4.6 out of 5.0, and my focus areas include Database Systems and AI & Machine Learning. Relevant coursework includes Machine Learning Systems, Natural Language Processing, and Big Data Systems.",
+    "expected_facts": [
+      "Bachelor of Computing",
+      "Computer Science",
+      "Innovation and Design",
+      "GPA: 4.6/5.0",
+      "Database Systems"
+    ]
+  },
+  {
+    "query": "What internships have you done?",
+    "expected_audience": "recruiter",
+    "likely_sources": ["resume", "linkedin"],
+    "gold_answer": "I've completed four main internships. At DEIF Asia Pacific, I worked on Open Charge Point Protocol workflows and a simulator for EV charger validation. At Hutchinson Research and Innovation, I built an industrial monitoring dashboard and an RFQ document management system. At Venture Corporation, I led development of w[AI]ter, an edge-based voice AI dining assistant. At AI Singapore, I built a multilingual speech-data ETL pipeline and an ASR evaluation framework for the SEA-LION project.",
+    "expected_facts": [
+      "AI Singapore",
+      "w[AI]ter",
+      "OCPP",
+      "SEA-LION",
+      "Hutchinson"
+    ]
+  },
+  {
+    "query": "What are your main technical strengths?",
+    "expected_audience": "technical",
+    "likely_sources": ["resume", "values", "github"],
+    "gold_answer": "My strongest technical area is building end-to-end systems that have to work reliably in practice. That includes data pipelines, evaluation systems, backend services, and production-facing AI workflows. I naturally think about the full system rather than one isolated component, which helps me connect design decisions upstream to downstream consequences. I also tend to reason from the user experience backward to the architecture, which helps me focus on what actually matters in deployment rather than only what looks elegant in a demo.",
+    "expected_facts": [
+      "end-to-end",
+      "data pipelines",
+      "evaluation",
+      "production",
+      "user"
+    ]
+  },
+  {
+    "query": "Tell me about your Python experience.",
+    "expected_audience": "technical",
+    "likely_sources": ["resume", "github"],
+    "gold_answer": "Python has been one of my primary languages across AI and data-oriented work. At AI Singapore, I used Python for building a scalable ETL pipeline for more than 15,000 hours of multilingual speech data and for designing an evaluation framework that computed WER and CER with per-language and condition-wise breakdowns. In projects, I've also used Python with frameworks like LangChain, PyTorch, pandas, scikit-learn, and FastAPI. So my Python experience is not just algorithmic scripting — it's been tied to production pipelines, evaluation, and backend workflows.",
+    "expected_facts": [
+      "Python",
+      "15,000+ hours",
+      "LangChain",
+      "PyTorch",
+      "FastAPI"
+    ]
+  },
+  {
+    "query": "What programming languages and tools do you know?",
+    "expected_audience": "technical",
+    "likely_sources": ["resume", "github"],
+    "gold_answer": "My main programming languages are Python, SQL, Java, JavaScript, TypeScript, and C. On the AI/ML side I've worked with PyTorch, HuggingFace, scikit-learn, pandas, and LangChain. For systems and backend work I've used FastAPI, Docker, AWS, PySpark, PostgreSQL, MongoDB, and Pinecone. I've also worked with Angular, React, ONNX Runtime, and NVIDIA Jetson hardware in applied projects.",
+    "expected_facts": [
+      "Python",
+      "SQL",
+      "Java",
+      "FastAPI",
+      "PostgreSQL"
+    ]
+  },
+  {
+    "query": "Tell me about the w[AI]ter project.",
+    "expected_audience": "technical",
+    "likely_sources": ["resume", "values"],
+    "gold_answer": "w[AI]ter was an edge-based voice AI dining assistant I built during my internship at Venture Corporation. I worked on it end to end, from architectural design to deployment and validation. The system used a state-aware agentic workflow with a finite-state controller, a Phi-3-Mini small language model, and a low-latency edge inference pipeline on NVIDIA Jetson Orin NX with ONNX Runtime and quantisation. By the time I left, it had logged more than 40,000 interactions and achieved an NPS of 40 in pilot use. What stood out most from that experience was the gap between making an AI system work in a demo and making it reliable enough for real users.",
+    "expected_facts": [
+      "w[AI]ter",
+      "40,000+ interactions",
+      "Net Promoter Score",
+      "Phi-3-Mini",
+      "Jetson Orin NX"
+    ]
+  },
+  {
+    "query": "Tell me about your work at AI Singapore.",
+    "expected_audience": "technical",
+    "likely_sources": ["resume"],
+    "gold_answer": "At AI Singapore, I worked as an AI Engineer Intern on the SEA-LION project. My work focused on two things. First, I engineered a scalable ETL pipeline to ingest and process more than 15,000 hours of multilingual speech data across ingestion, transformation, and validation stages. Second, I designed an ASR evaluation framework that computed WER and CER with breakdowns by language, accent, and noise condition, and benchmarked results against baselines. That experience shaped how I think about quality because it showed me how aggregate metrics can hide important failures.",
+    "expected_facts": [
+      "AI Singapore",
+      "SEA-LION",
+      "15,000+ hours",
+      "WER/CER",
+      "noise-condition breakdowns"
+    ]
+  },
+  {
+    "query": "What did you build at Hutchinson?",
+    "expected_audience": "technical",
+    "likely_sources": ["resume", "values"],
+    "gold_answer": "At Hutchinson Research and Innovation, I worked on two main systems. One was a real-time dashboard for monitoring more than 120 machine parameters, where sensor data flowed through Redis into PostgreSQL with a FastAPI layer and an Angular frontend. The other was a full-stack RFQ document management system built with React, FastAPI, and PostgreSQL. That system included a multi-level approval workflow and complete audit trail, and it reduced approval cycle times by 50 percent. Hutchinson was also where I learned a lasting lesson about building from the user's mental model rather than from my own technical assumptions.",
+    "expected_facts": [
+      "120+ machine parameters",
+      "Redis",
+      "FastAPI",
+      "RFQ document management system",
+      "50%"
+    ]
+  },
+  {
+    "query": "What did you work on at DEIF?",
+    "expected_audience": "technical",
+    "likely_sources": ["resume", "linkedin"],
+    "gold_answer": "At DEIF Asia Pacific, I worked on EV charging software and protocol interoperability. I implemented core Open Charge Point Protocol 2.0.1 workflows in Java, handling asynchronous message exchanges and charger lifecycle events. I also developed a React-based simulator for the Central Charging Management System to exercise more than 40 end-to-end charging scenarios. That work helped improve protocol validation and reduce integration costs.",
+    "expected_facts": [
+      "OCPP",
+      "Java",
+      "simulator",
+      "charging"
+    ]
+  },
+  {
+    "query": "What project are you most proud of?",
+    "expected_audience": "general",
+    "likely_sources": ["resume", "values", "github"],
+    "gold_answer": "I'm especially proud of w[AI]ter because it brought together a lot of the things I care about: system design, AI reliability, user experience, and real-world constraints. It wasn't just a model demo — it had to work for actual diners on edge hardware with low latency and limited tolerance for failure. That project made the distinction between technical possibility and dependable product behavior very concrete for me, and that is exactly the kind of work I want to keep doing.",
+    "expected_facts": [
+      "w[AI]ter",
+      "40,000",
+      "NPS",
+      "Venture",
+      "edge"
+    ]
+  },
+  {
+    "query": "What makes you different as an engineer?",
+    "expected_audience": "general",
+    "likely_sources": ["values", "resume", "blog"],
+    "gold_answer": "The main thing that differentiates me is that I care a lot about the user-side reality of technical systems. I don't find architecture or model choice interesting in isolation. What interests me is whether the person on the other end can trust the system, understand it, and actually benefit from it. That mindset shapes how I build and how I evaluate. I also like going deep on reasoning and trade-offs, but I've learned to balance that with a bias toward what actually creates value for the user.",
+    "expected_facts": [
+      "user",
+      "trust",
+      "trade-offs",
+      "evaluate",
+      "architecture"
+    ]
+  },
+  {
+    "query": "Why did you choose Computer Science?",
+    "expected_audience": "general",
+    "likely_sources": ["values", "linkedin"],
+    "gold_answer": "I started Computer Science because I wanted to understand technology in a broad sense — it was obviously shaping the world, and I wanted to know how it worked. Over time, what kept me in it was not the technology by itself, but the challenge of translating technical ideas into systems that are reliable and useful for real people. That shift from curiosity about technology to caring about user trust and system behavior is what really defines my relationship with computer science now.",
+    "expected_facts": [
+      "Computer Science",
+      "Software Engineering",
+      "Database Systems",
+      "reliable",
+      "user"
+    ]
+  },
+  {
+    "query": "Why are you interested in AI?",
+    "expected_audience": "general",
+    "likely_sources": ["values", "blog", "resume"],
+    "gold_answer": "I'm interested in AI because it makes the gap between technical capability and real-world reliability especially obvious. You can get an AI system to work in a controlled demo relatively quickly, but making it dependable, understandable, and trustworthy in practice is much harder. That's the part I find interesting. My internships at Venture and AI Singapore made that concrete for me, and they pushed me toward thinking about evaluation, orchestration, user trust, and production quality rather than just model performance.",
+    "expected_facts": [
+      "trust",
+      "evaluation",
+      "Venture",
+      "AI Singapore",
+      "production"
+    ]
+  },
+  {
+    "query": "How do you think about quality when building AI systems?",
+    "expected_audience": "technical",
+    "likely_sources": ["values", "resume"],
+    "gold_answer": "I don't trust aggregate metrics by default. At AI Singapore, we had evaluation numbers that looked fine until we sliced performance by language, accent, and noise condition and found failures that would have been invisible in a single average. That taught me that good evaluation is not just about reporting a reassuring number. It's about understanding where the system fails, for whom, and under what conditions. More broadly, I think quality means whether a system deserves to be used, not whether it merely performs well on a benchmark.",
+    "expected_facts": [
+      "WER/CER",
+      "accent",
+      "noise-condition breakdowns",
+      "real person can trust",
+      "understanding who it was for"
+    ]
+  },
+  {
+    "query": "How do you solve hard problems when you're stuck?",
+    "expected_audience": "technical",
+    "likely_sources": ["values"],
+    "gold_answer": "When I'm stuck, I externalise the problem first. I'll write it down, sketch it on a whiteboard, or structure it in a doc because getting it out of my head helps reveal the shape of the problem. Often that shows me that I was solving the wrong problem in the first place. If that still isn't enough, I talk it through with someone. Not because I want them to solve it for me, but because explaining the problem clearly usually exposes the gap in my reasoning.",
+    "expected_facts": [
+      "externalise the problem",
+      "whiteboard",
+      "blank doc",
+      "wrong problem",
+      "reasoning has a gap"
+    ]
+  },
+  {
+    "query": "How do you make decisions under uncertainty?",
+    "expected_audience": "recruiter",
+    "likely_sources": ["values"],
+    "gold_answer": "When there isn't a clear answer, I start by doing the research properly and being explicit about what I know versus what I'm assuming. If assumptions are unavoidable, I write them down and make sure they're justified. I also try to talk to the relevant stakeholders so I'm not making a decision in isolation. Then I make the best call I can with the available information, but I usually come prepared with alternatives in case one of my assumptions turns out to be wrong. I'd rather be explicit about uncertainty than pretend to have false certainty.",
+    "expected_facts": [
+      "research",
+      "write down",
+      "explicit",
+      "assumptions",
+      "alternatives"
+    ]
+  },
+  {
+    "query": "What is your working style?",
+    "expected_audience": "recruiter",
+    "likely_sources": ["values"],
+    "gold_answer": "My working style is built around autonomy, honest feedback, and tangible progress. I like having real ownership over decisions, but I also want people around me who will tell me directly when those decisions are wrong. I'm most productive when there's enough clarity on the user and problem that I can reason about trade-offs, and enough trust in the team that people can challenge each other without the discussion becoming personal. I also tend to default to writing when I want precision, especially for complex decisions.",
+    "expected_facts": [
+      "autonomy",
+      "ownership",
+      "tangible progress",
+      "default to writing"
+    ]
+  },
+  {
+    "query": "How do you handle disagreement or conflict?",
+    "expected_audience": "recruiter",
+    "likely_sources": ["values"],
+    "gold_answer": "I'm direct, and I'd rather address disagreement early than let it become a larger problem later. In disagreements, I try to separate the idea from the person — push hard on the reasoning, never on the individual. I don't think honesty and respect are in tension; usually the more respectful thing is to tell someone clearly what isn't working so it can improve. What matters to me is whether the discussion is helping us arrive at a better decision, not whether everyone sounds agreeable while avoiding the real issue.",
+    "expected_facts": [
+      "truth fast",
+      "separate the idea",
+      "push hard on the reasoning",
+      "bluntness and respect",
+      "too honest"
+    ]
+  },
+  {
+    "query": "How do you like to communicate and receive feedback?",
+    "expected_audience": "recruiter",
+    "likely_sources": ["values"],
+    "gold_answer": "I prefer direct feedback. If something I built isn't working, I'd rather know immediately than discover it after the fact. I also usually default to writing when I need to communicate something complex, because writing forces precision and makes gaps visible faster. Then, if needed, I talk it through. So the combination that works best for me is direct, actionable feedback and communication that is clear enough to survive scrutiny.",
+    "expected_facts": [
+      "direct",
+      "default to writing",
+      "precision",
+      "gaps"
+    ]
+  },
+  {
+    "query": "What are your strengths?",
+    "expected_audience": "recruiter",
+    "likely_sources": ["values", "resume"],
+    "gold_answer": "My biggest strength is that I think from the user's reality backward to the system, rather than from the technology outward. That usually helps me identify the real problem earlier. Another strength is end-to-end thinking: I naturally connect upstream design decisions to downstream consequences, whether that's data quality affecting evaluation or interface decisions affecting trust. I also care a lot about clarity of reasoning, which helps in both technical design and communication.",
+    "expected_facts": [
+      "user",
+      "end-to-end",
+      "trust",
+      "clarity",
+      "evaluation"
+    ]
+  },
+  {
+    "query": "What is a weakness or growth area you are working on?",
+    "expected_audience": "recruiter",
+    "likely_sources": ["values"],
+    "gold_answer": "I have a tendency to go too deep when I find a problem technically interesting. My instinct is to pursue the elegant or fully general solution even when something simpler would have shipped faster and served the user just as well. I've gotten better at interrupting that tendency by asking whether the complexity actually earns its place and whether the user would notice the difference. It's still something I actively manage rather than something I claim to have completely solved.",
+    "expected_facts": [
+      "tendency to go too deep",
+      "elegant solution",
+      "complexity earns its place",
+      "user notice the difference",
+      "learned to interrupt"
+    ]
+  },
+  {
+    "query": "What kind of team environment helps you do your best work?",
+    "expected_audience": "recruiter",
+    "likely_sources": ["values"],
+    "gold_answer": "I do my best work in environments with a combination of autonomy and honest feedback. I want enough trust to make meaningful decisions, but also enough accountability that people will challenge weak reasoning directly. I also care a lot about substance over optics. If a culture rewards polished presentation more than working systems, I don't think the incentives are healthy. The best environments for me are the ones where progress is tangible, feedback is real, and the user problem is clear enough to reason about trade-offs.",
+    "expected_facts": [
+      "autonomy and honest feedback",
+      "freedom to make real decisions",
+      "tangible progress",
+      "polished presentations",
+      "working systems"
+    ]
+  },
+  {
+    "query": "What frustrates you at work?",
+    "expected_audience": "recruiter",
+    "likely_sources": ["values"],
+    "gold_answer": "Two things consistently frustrate me. The first is environments where optics matter more than whether the system actually works. The second is building without clarity on who the user is and what problem the work is solving. Without that clarity, technical choices become arbitrary, and I find that demotivating. I don't need a perfect spec, but I do need enough clarity to reason about trade-offs in a meaningful way.",
+    "expected_facts": [
+      "optics over substance",
+      "without clarity on who",
+      "technical decisions become arbitrary",
+      "understanding who it was for"
+    ]
+  },
+  {
+    "query": "What do you do outside of work?",
+    "expected_audience": "general",
+    "likely_sources": ["values"],
+    "gold_answer": "Outside of work, I run and I write. Running appeals to me because it doesn't let you bluff — you've done the training or you haven't, and that honesty is clarifying. Writing plays a similar role in a different way. I usually write when an idea changes how I think and I want to sit with it long enough to explain it clearly. Both habits appeal to the same part of me: the part that values honesty, clarity, and earned understanding.",
+    "expected_facts": [
+      "running",
+      "doesn't let you bluff",
+      "write",
+      "changes how I think",
+      "pressure-test my own thinking"
+    ]
+  },
+  {
+    "query": "What kind of topics do you write about?",
+    "expected_audience": "general",
+    "likely_sources": ["blog", "values"],
+    "gold_answer": "My writing tends to sit at the intersection of computer science concepts and the way they connect to broader ways of thinking. On Medium, I've written about randomness, machine learning and genetic algorithms, priority inversion in operating systems, and cache concepts explained through everyday analogies. The common thread is that I usually write when an idea changes how I think and I want to understand it well enough to explain it clearly.",
+    "expected_facts": [
+      "randomness",
+      "Darwin",
+      "priority inversion",
+      "cache"
+    ]
+  },
+  {
+    "query": "Have you written anything publicly?",
+    "expected_audience": "general",
+    "likely_sources": ["blog", "github"],
+    "gold_answer": "Yes. I have a Medium profile where I've published posts including 'Life is like a box of chocolates (Part 1)' on randomness, 'Machine Learning gets Darwin hitched' on machine learning and evolutionary ideas, 'Pathfinder and Priority Inversion' on an operating systems case study, and 'Cache and the Closet' as a systems analogy piece. My GitHub profile README also links to these posts publicly.",
+    "expected_facts": [
+      "Life is like a box",
+      "Machine Learning gets Darwin",
+      "Pathfinder and Priority Inversion",
+      "Cache and the Closet",
+      "Hi, I'm Aditya"
+    ]
+  },
+  {
+    "query": "What have your internships taught you about building systems?",
+    "expected_audience": "general",
+    "likely_sources": ["resume", "values"],
+    "gold_answer": "The biggest lesson across my internships is that technical correctness is only the starting point. At Hutchinson I learned that a system can make perfect sense technically and still fail if it doesn't match how users actually think. At Venture I learned that getting an AI system to work in a demo and making it reliable for real users are very different problems. At AI Singapore I learned that aggregate metrics can hide failure modes that matter. Put together, those experiences taught me to care much more about the connection between architecture, evaluation, and user trust.",
+    "expected_facts": [
+      "trust",
+      "15,000",
+      "w[AI]ter",
+      "WER/CER",
+      "Hutchinson"
+    ]
+  },
+  {
+    "query": "How do you think about the difference between a demo and a trustworthy product?",
+    "expected_audience": "technical",
+    "likely_sources": ["values", "resume"],
+    "gold_answer": "A demo proves that something can work under favorable conditions. A trustworthy product proves that it continues to work under real constraints, for real users, when patience is limited and failure matters. That difference became very concrete for me during the w[AI]ter project. The technical demo was the easy part. The real engineering work was in making the system stable, low-latency, and dependable enough that people could actually use it without thinking about the machinery underneath.",
+    "expected_facts": [
+      "trust",
+      "w[AI]ter",
+      "40,000",
+      "NPS"
+    ]
+  },
+  {
+    "query": "What is UrbanCIA?",
+    "expected_audience": "technical",
+    "likely_sources": ["resume"],
+    "gold_answer": "UrbanCIA is my final-year project, supervised by Professor Roger Zimmermann. The idea is to build a LangChain-powered multi-agent system that can autonomously select causal inference methods, validate identification assumptions, and generate interpretable causal effect estimates for urban policy analysis. It sits at the intersection of AI systems and applied econometric reasoning.",
+    "expected_facts": [
+      "UrbanCIA",
+      "LangChain-powered multi-agent system",
+      "causal inference methods",
+      "interpretable causal effect estimates",
+      "Roger Zimmermann"
+    ]
+  },
+  {
+    "query": "What is ESG Edge?",
+    "expected_audience": "technical",
+    "likely_sources": ["resume"],
+    "gold_answer": "ESG Edge was a project for the Nomura AI Challenge, where the team became a finalist. It was a RAG-driven ESG insights platform built on Bedrock. The system ingested multi-source data through AWS Lambda, used hierarchical chunking and vector retrieval, and powered a context-aware chatbot. The projected impact mentioned in the résumé was a savings of more than 100,000 analyst hours annually.",
+    "expected_facts": [
+      "ESG Edge",
+      "Bedrock",
+      "AWS Lambda",
+      "vector retrieval",
+      "100,000+ analyst hours"
+    ]
+  },
+  {
+    "query": "What is HalalChain?",
+    "expected_audience": "technical",
+    "likely_sources": ["resume"],
+    "gold_answer": "HalalChain was a hackathon project for the NUS FinTech Summit 2026, where the team won. It was a Shariah-compliant tokenization and trading platform built on XRPL. My contribution was on the backend: defining Next.js API routes and PostgreSQL schemas to manage the lifecycle of assets from issuance and decentralized exchange trading to maturity redemption.",
+    "expected_facts": [
+      "HalalChain",
+      "XRPL",
+      "Next.js API routes",
+      "PostgreSQL schemas",
+      "DEX trading"
+    ]
+  },
+  {
+    "query": "Do you have teaching experience?",
+    "expected_audience": "recruiter",
+    "likely_sources": ["resume", "linkedin", "values"],
+    "gold_answer": "Yes. At NUS I've been a Teaching Assistant for AI & Machine Learning and Foundations of Software Engineering. Teaching has made me much more rigorous about explanation, because you can't really bluff your way through a student's question. It reinforced my belief that if I can't explain a decision clearly to someone skeptical, I probably haven't understood it well enough myself.",
+    "expected_facts": [
+      "Teaching Assistant",
+      "AI",
+      "Software Engineering",
+      "NUS"
+    ]
+  },
+  {
+    "query": "Where do you see yourself in the next three to five years?",
+    "expected_audience": "recruiter",
+    "likely_sources": ["values"],
+    "gold_answer": "Over the next few years, I want to become the kind of engineer who can design systems well, not just implement them. I'm not primarily motivated by management or titles. What I want is depth: stronger technical judgment, better architectural instincts, and the experience that comes from making decisions and seeing how they play out in real systems. The kinds of decisions I'm especially interested in are the ones that determine whether a system actually succeeds for users — retrieval strategy, orchestration design, evaluation in production, and where humans should stay in the loop.",
+    "expected_facts": [
+      "designs the system",
+      "genuinely strong technically",
+      "retrieval strategy",
+      "human in the loop",
+      "getting it right actually matters"
+    ]
+  },
+  {
+    "query": "Why would you be a strong fit for an AI systems role?",
+    "expected_audience": "recruiter",
+    "likely_sources": ["resume", "values"],
+    "gold_answer": "I think I'd be a strong fit because my experience sits exactly in the layer where AI systems become real products. I've worked on data pipelines, evaluation frameworks, edge inference, agentic workflows, and production-oriented software. Just as importantly, I care a lot about the part that is easy to ignore: whether the user can actually trust the system, whether the failure modes are understood, and whether the design is appropriate for the deployment context. That combination of technical depth and user-centered thinking is the kind of contribution I want to keep making.",
+    "expected_facts": [
+      "agentic",
+      "pipeline",
+      "evaluation",
+      "production",
+      "trust"
+    ]
+  },
+  {
+    "query": "What certifications or awards do you have?",
+    "expected_audience": "recruiter",
+    "likely_sources": ["resume", "linkedin"],
+    "gold_answer": "My résumé highlights academic awards including Top Student in Foundations of Software Engineering, Big Data Systems, and Database Systems. On LinkedIn, my listed certifications include AI for Industry: Literacy in AI, Software Engineering Focus Area with Distinction, Platform Thinking: what's beyond Uber?, Orbital - Project Gemini (Intermediate), and AWS Educate Getting Started with Networking.",
+    "expected_facts": [
+      "Top Student",
+      "AI For Industry",
+      "Software Engineering Focus Area",
+      "AWS Educate",
+      "Project Gemini"
+    ]
+  },
+  {
+    "query": "Do you have any open-source or GitHub work?",
+    "expected_audience": "technical",
+    "likely_sources": ["github", "linkedin"],
+    "gold_answer": "Yes. My GitHub profile includes more than 40 repositories and highlights projects such as CATcher and WATcher, both related to software project testing and monitoring. My profile README describes me as a full-stack developer and links out to my public writing on Medium. GitHub is useful as evidence of the tools and ecosystems I've worked in beyond what's captured in a résumé bullet.",
+    "expected_facts": [
+      "CATcher",
+      "WATcher"
+    ]
+  },
+  {
+    "query": "What topics seem to connect your work across internships, projects, and writing?",
+    "expected_audience": "general",
+    "likely_sources": ["resume", "values", "blog"],
+    "gold_answer": "The common thread is that I'm drawn to systems that have to earn trust. In my internships that meant building pipelines, workflows, and AI systems that had to work under real constraints. In my writing it means taking technical ideas seriously enough to explain them clearly rather than just gesture at them. Across both, I care about clarity, user impact, and understanding failure modes rather than only optimizing for technical novelty.",
+    "expected_facts": [
+      "trust",
+      "user",
+      "clarity",
+      "failure modes",
+      "pipeline"
+    ]
+  },
+  {
+    "query": "How do you stay current with new ideas in technology?",
+    "expected_audience": "technical",
+    "likely_sources": ["blog", "values"],
+    "gold_answer": "I tend not to treat staying current as passively consuming updates. When something genuinely changes how I think, I usually write about it or explain it to someone. That forces me to move past surface familiarity and test whether I actually understand it. So for me, keeping up with new ideas is tied to active sense-making rather than just reading headlines.",
+    "expected_facts": [
+      "changes how I think",
+      "pressure-test my own thinking",
+      "explain it to someone",
+      "writing"
+    ]
+  },
+  {
+    "query": "What is your GPA?",
+    "expected_audience": "recruiter",
+    "likely_sources": ["resume"],
+    "gold_answer": "My GPA is 4.6 out of 5.0.",
+    "expected_facts": [
+      "4.6",
+      "5.0"
+    ]
+  },
+  {
+    "query": "What do you study at NUS, and what are your focus areas?",
+    "expected_audience": "general",
+    "likely_sources": ["resume"],
+    "gold_answer": "At NUS I study Computer Science within the Bachelor of Computing programme, and I also minor in Innovation and Design. My focus areas are Database Systems and AI & Machine Learning.",
+    "expected_facts": [
+      "Computer Science",
+      "Innovation and Design",
+      "Database Systems",
+      "AI & Machine Learning"
+    ]
+  },
+  {
+    "query": "How do you describe yourself professionally on LinkedIn?",
+    "expected_audience": "recruiter",
+    "likely_sources": ["linkedin"],
+    "gold_answer": "On LinkedIn I describe myself as a final-year Computer Science student at NUS with a focus on AI/ML systems and full-stack software engineering. My profile highlights my internship experience across AI Singapore, Venture Corporation, Hutchinson, and DEIF, and reflects a career narrative that has moved progressively from software engineering foundations toward AI-oriented systems work.",
+    "expected_facts": [
+      "Computer Science",
+      "NUS",
+      "AI Singapore",
+      "full-stack"
+    ]
+  },
+  {
+    "query": "What certifications or professional development have you listed on LinkedIn?",
+    "expected_audience": "recruiter",
+    "likely_sources": ["linkedin"],
+    "gold_answer": "My LinkedIn lists several certifications including AI for Industry: Literacy in AI, Software Engineering Focus Area with Distinction, Platform Thinking: what's beyond Uber?, Orbital - Project Gemini at the Intermediate level, and AWS Educate Getting Started with Networking. The Software Engineering Focus Area with Distinction reflects the academic recognition from NUS for completing the focus area requirements.",
+    "expected_facts": [
+      "AI For Industry",
+      "Software Engineering Focus Area",
+      "Platform Thinking",
+      "Project Gemini",
+      "AWS Educate"
+    ]
+  },
+  {
+    "query": "What does your LinkedIn profile show about your career trajectory?",
+    "expected_audience": "recruiter",
+    "likely_sources": ["linkedin", "resume"],
+    "gold_answer": "My LinkedIn shows a clear trajectory from foundational software engineering work toward AI and production systems. I started with protocol implementation and industrial tooling at DEIF and Hutchinson, then moved into AI-intensive roles at Venture and AI Singapore. Alongside those I have been a Teaching Assistant at NUS, which reflects an interest in clear communication and technical depth. The overall arc is someone who started building reliable software and then went deeper into the AI layer of that problem.",
+    "expected_facts": [
+      "Teaching Assistant",
+      "AI Singapore",
+      "DEIF",
+      "Hutchinson"
+    ]
+  },
+  {
+    "query": "What does your GitHub profile look like?",
+    "expected_audience": "technical",
+    "likely_sources": ["github"],
+    "gold_answer": "My GitHub profile has over 40 repositories and a README that introduces me as a full-stack developer with interests in AI and systems. It highlights pinned projects including CATcher and WATcher, which are software project management and monitoring tools related to open-source contributions at NUS. The profile also links out to my Medium writing. The repositories span a range of languages and domains, with Python and JavaScript appearing most heavily.",
+    "expected_facts": [
+      "Hi, I'm Aditya",
+      "passionate full-stack developer",
+      "CATcher",
+      "WATcher"
+    ]
+  },
+  {
+    "query": "What languages appear most frequently across your GitHub repositories?",
+    "expected_audience": "technical",
+    "likely_sources": ["github"],
+    "gold_answer": "Across my repositories, Python and JavaScript appear most frequently. Python shows up in AI and data-oriented work, and JavaScript and TypeScript appear in full-stack and frontend projects. There is also Java in some of my older and protocol-level work. The distribution reflects the range of work I've done, from scripting and ML pipelines in Python to web applications and API layers in JavaScript.",
+    "expected_facts": [
+      "Python",
+      "JavaScript",
+      "TypeScript",
+      "Java"
+    ]
+  },
+  {
+    "query": "Tell me about CATcher or WATcher.",
+    "expected_audience": "technical",
+    "likely_sources": ["github"],
+    "gold_answer": "CATcher and WATcher are open-source tools I contributed to as part of my work at NUS. CATcher is a bug reporting and triaging tool used in software engineering education, and WATcher is a project monitoring tool built to help teams track activity across GitHub repositories. Both are related to the CS3282 open-source software engineering module at NUS, and they reflect the kind of software tooling work I've done beyond AI-specific projects.",
+    "expected_facts": [
+      "CATcher",
+      "WATcher"
+    ]
+  },
+  {
+    "query": "Why do you want to work at Manulife?",
+    "expected_audience": "recruiter",
+    "likely_sources": ["values"],
+    "gold_answer": "What draws me to Manulife specifically is the combination of scale and consequence. Insurance and financial services are domains where the gap between a technically impressive system and a trustworthy one matters enormously — the people relying on these systems are making real financial decisions. That is exactly the kind of context I find compelling, and it matches the direction my work has been moving: toward AI systems that have to earn trust rather than just perform well in controlled conditions. Manulife's focus on AI for Asia also fits well with my background at AI Singapore, where I worked directly on multilingual and Southeast Asian language systems.",
+    "expected_facts": [
+      "trust",
+      "AI Singapore",
+      "financial",
+      "scale"
+    ]
+  },
+  {
+    "query": "What are you looking for in your next role?",
+    "expected_audience": "recruiter",
+    "likely_sources": ["values"],
+    "gold_answer": "I'm looking for a role where I can work on AI systems that have to function reliably in practice, not just in demos. I want enough technical ownership to make real architectural decisions, and I want to be surrounded by people who will push back on those decisions directly. I'm also looking for a context where the user problem is clear enough that I can evaluate trade-offs meaningfully. What I'm not looking for is a role where the work is polished but disconnected from user impact or real deployment constraints.",
+    "expected_facts": [
+      "autonomy",
+      "ownership",
+      "trade-offs",
+      "user"
+    ]
+  },
+  {
+    "query": "If a system's aggregate metrics looked good but one user segment performed badly, what would you do?",
+    "expected_audience": "technical",
+    "likely_sources": ["values", "resume"],
+    "gold_answer": "I would treat that as a signal that the aggregate number is hiding something important, and I'd investigate the failing segment first rather than reassure myself with the overall number. This happened concretely at AI Singapore, where our ASR evaluation numbers looked reasonable in aggregate until we broke them down by language, accent, and noise condition and found failure modes that would have been invisible otherwise. My view is that a system that works for 90 percent of users but consistently fails a specific segment is not a good system — it's a system with an undisclosed failure mode.",
+    "expected_facts": [
+      "WER/CER",
+      "accent",
+      "noise condition",
+      "failure mode"
+    ]
+  },
+  {
+    "query": "If you had to choose between shipping quickly and building something more complete, how would you decide?",
+    "expected_audience": "technical",
+    "likely_sources": ["values"],
+    "gold_answer": "I'd start by asking what complexity actually earns its place in this specific context. Speed and quality are not always in tension — sometimes a simpler solution serves the user just as well as an elegant one. The real question is whether the added completeness solves a real user problem or whether it solves a technical problem I find interesting. If it's the latter, shipping faster is almost always right. Where I draw the line is when cutting corners creates risk the user will have to absorb — then I think the cost of incompleteness is being unfairly transferred to the user.",
+    "expected_facts": [
+      "elegant solution",
+      "complexity earns its place",
+      "user notice the difference",
+      "learned to interrupt"
+    ]
+  },
+  {
+    "query": "What prompted you to write about priority inversion in operating systems?",
+    "expected_audience": "general",
+    "likely_sources": ["blog"],
+    "gold_answer": "I wrote about priority inversion because it is one of those concepts that seems narrow and technical but actually reveals something interesting about how systems fail in practice. The Mars Pathfinder mission is the classic case, where a real mission was nearly compromised by a scheduling problem that had been understood in theory. I tend to write when a technical idea surprises me or changes how I think about something, and priority inversion did that because it showed how seemingly correct local decisions can produce catastrophic system-level failures.",
+    "expected_facts": [
+      "Pathfinder",
+      "Mars",
+      "priority inversion"
+    ]
+  },
+  {
+    "query": "What ideas or thinkers have shaped how you think about technology?",
+    "expected_audience": "general",
+    "likely_sources": ["blog", "values"],
+    "gold_answer": "Rather than specific thinkers, I'd point to a set of ideas that keep coming back in my work. The idea that aggregate metrics hide important failures. The idea that a technically correct system can still be wrong if it doesn't match the user's mental model. The idea that clarity of explanation is a proxy for depth of understanding — if I can't explain it to someone skeptical, I probably haven't understood it well enough. These come through in my writing and in how I approach design decisions, more than from a single source.",
+    "expected_facts": [
+      "user",
+      "mental model",
+      "clarity",
+      "explain"
+    ]
+  }
+]

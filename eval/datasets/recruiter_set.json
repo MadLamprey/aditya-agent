@@ -1,0 +1,72 @@
+[
+  {
+    "turn": 1,
+    "query": "Hi! Thanks for coming in. Can you start by telling me a little about yourself?",
+    "audience_hint": "recruiter",
+    "expected_facts": ["Computer Science", "NUS"],
+    "notes": "Opening question. Should give a concise professional summary."
+  },
+  {
+    "turn": 2,
+    "query": "That's great. Walk me through your internship experience — what have you worked on?",
+    "audience_hint": "recruiter",
+    "expected_facts": ["AI Singapore", "Venture"],
+    "notes": "Career trajectory question. Should mention key internships."
+  },
+  {
+    "turn": 3,
+    "query": "Interesting — tell me more about that voice AI project. What was your role?",
+    "audience_hint": "recruiter",
+    "expected_facts": ["w[AI]ter", "Jetson"],
+    "notes": "Follow-up requiring coreference resolution — 'that voice AI project' refers to w[AI]ter mentioned in prior turn."
+  },
+  {
+    "turn": 4,
+    "query": "What would you say is your biggest strength?",
+    "audience_hint": "recruiter",
+    "expected_facts": ["user"],
+    "notes": "Behavioral question. Should draw from values doc."
+  },
+  {
+    "turn": 5,
+    "query": "And what about a weakness or area you're still working on?",
+    "audience_hint": "recruiter",
+    "expected_facts": ["deep", "complexity"],
+    "notes": "Self-awareness question. Values doc has the 'going too deep' section."
+  },
+  {
+    "turn": 6,
+    "query": "How do you handle disagreements or conflict within a team?",
+    "audience_hint": "recruiter",
+    "expected_facts": ["direct", "reasoning"],
+    "notes": "Behavioral question about conflict resolution."
+  },
+  {
+    "turn": 7,
+    "query": "What kind of team environment helps you do your best work?",
+    "audience_hint": "recruiter",
+    "expected_facts": ["autonomy", "feedback"],
+    "notes": "Culture fit question. Values doc covers this directly."
+  },
+  {
+    "turn": 8,
+    "query": "Where do you see yourself in the next few years?",
+    "audience_hint": "recruiter",
+    "expected_facts": ["design", "depth"],
+    "notes": "Career goals question. Values doc has the 'Where I Want to Go' section."
+  },
+  {
+    "turn": 9,
+    "query": "Why are you interested in working at Manulife specifically?",
+    "audience_hint": "recruiter",
+    "expected_facts": ["trust"],
+    "notes": "Motivation question. Should connect personal values to the company context."
+  },
+  {
+    "turn": 10,
+    "query": "Great — do you have any questions for us?",
+    "audience_hint": "recruiter",
+    "expected_facts": [],
+    "notes": "Closing question. System should handle gracefully — either ask a relevant question back or redirect naturally."
+  }
+]
