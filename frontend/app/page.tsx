@@ -54,7 +54,7 @@ export default function Home() {
     setWorldState("thinking")
 
     try {
-      const res = await fetch("/api/ask", {
+      const res = await fetch("/ask", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query, audience: mode, history }),
